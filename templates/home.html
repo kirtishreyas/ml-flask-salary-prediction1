@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Salary Prediction App</h1>
+
+        <form action="/predict" method="POST">
+            <label for="years_experience">Enter Years of Experience:</label>
+            <input type="text" name="years_experience" placeholder="Enter years of experience" required>
+            <button type="submit">Predict Salary</button>
+        </form>
+    </div>
+
+</body>
+</html>
